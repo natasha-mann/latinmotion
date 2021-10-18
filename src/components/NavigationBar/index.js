@@ -12,7 +12,7 @@ const NavigationBar = (props) => {
   const [colourChange, setColourChange] = useState(false);
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 50) {
       setColourChange(true);
     } else {
       setColourChange(false);
@@ -31,7 +31,7 @@ const NavigationBar = (props) => {
       }
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#home">
+        <a className="navbar-brand" href="/">
           <img src={logo} alt="logo" className="logo" />
         </a>
         <button

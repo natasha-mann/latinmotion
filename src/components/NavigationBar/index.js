@@ -22,6 +22,10 @@ const NavigationBar = (props) => {
 
   window.addEventListener("scroll", changeNavbarColor);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <nav
       id="navbar"
@@ -32,9 +36,9 @@ const NavigationBar = (props) => {
       }
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <div className="navbar-brand" onClick={scrollToTop}>
           <img src={logo} alt="logo" className="logo" />
-        </a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"

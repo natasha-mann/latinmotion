@@ -63,7 +63,7 @@ const NavigationBar = (props) => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-90}
               duration={300}
               isDynamic={true}
             >
@@ -75,7 +75,7 @@ const NavigationBar = (props) => {
               to="classes"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-90}
               duration={300}
               isDynamic={true}
             >
@@ -87,7 +87,7 @@ const NavigationBar = (props) => {
               to="events"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-90}
               duration={300}
               isDynamic={true}
             >
@@ -99,7 +99,7 @@ const NavigationBar = (props) => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-90}
               duration={300}
               isDynamic={true}
             >

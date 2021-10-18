@@ -1,5 +1,6 @@
 .class-cards-container {
-  margin: 0 3rem;
+  margin: 3rem;
+  margin-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -14,12 +15,21 @@
   margin: 0 2rem;
   border-radius: 10%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .venue-name {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+
+.venue-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .view-btn {
@@ -30,7 +40,9 @@
   height: 3rem;
 }
 
-.venue-card:hover {
+.view-btn:hover {
   transform: scale(1.01);
+  background-color: white;
+  color: var(--teal);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
 }

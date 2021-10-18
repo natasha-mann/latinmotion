@@ -36,8 +36,15 @@ const responsive = {
 };
 
 const CardsCarousel = (props) => {
-  const cards = props.itemsArray.map((each) => {
-    return <img src={each.src} alt={each.alt} className={each.className}></img>;
+  const cards = props.itemsArray.map((each, index) => {
+    return (
+      <img
+        src={each.src}
+        alt={each.alt}
+        className={each.className}
+        key={index}
+      ></img>
+    );
   });
 
   return (

@@ -1,0 +1,21 @@
+.class-cards-container {
+  margin: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.venue-card {
+  min-width: 26vw;
+  max-width: 28vw;
+  height: 15rem;
+  background-color: var(--teal);
+  margin: 0 2rem;
+  border-radius: 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.venue-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import "bootstrap/dist/js/bootstrap";
 
@@ -44,7 +45,7 @@ const NavigationBar = (props) => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon">
-            <GiHamburgerMenu />
+            <GiHamburgerMenu color="black" />
           </span>
         </button>
         <div
@@ -52,18 +53,54 @@ const NavigationBar = (props) => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav nav-links">
-            <a className="nav-link my-link" href="#about">
+            <Link
+              className="nav-link my-link"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              isDynamic={true}
+            >
               ABOUT
-            </a>
-            <a className="nav-link my-link" href="#classes">
+            </Link>
+            <Link
+              className="nav-link my-link"
+              activeClass="active"
+              to="classes"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              isDynamic={true}
+            >
               CLASSES
-            </a>
-            <a className="nav-link my-link" href="#events">
+            </Link>
+            <Link
+              className="nav-link my-link"
+              activeClass="active"
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              isDynamic={true}
+            >
               EVENTS
-            </a>
-            <a className="nav-link my-link" href="#contact">
+            </Link>
+            <Link
+              className="nav-link my-link"
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              isDynamic={true}
+            >
               CONTACT
-            </a>
+            </Link>
           </div>
         </div>
       </div>

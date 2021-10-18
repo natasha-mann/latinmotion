@@ -12,6 +12,10 @@
   box-shadow: 0px 15px 10px -15px rgb(134, 134, 134);
 }
 
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+}
+
 .dropdown-nav {
   justify-content: flex-end;
 }
@@ -30,14 +34,20 @@
   justify-content: flex-end;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.55);
+  margin: 0 1rem;
 }
 
 .my-link:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid;
   color: var(--red) !important;
 }
 
 .my-link:focus {
-  text-decoration: underline;
+  border-bottom: 2px solid;
+  color: var(--red) !important;
+}
+
+.active {
+  border-bottom: 2px solid;
   color: var(--red) !important;
 }

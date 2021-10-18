@@ -1,0 +1,10 @@
+.hero {
+  height: 33rem;
+  width: 100vw;
+  background: url(../../images/latinmotion-banner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 7rem;
+}

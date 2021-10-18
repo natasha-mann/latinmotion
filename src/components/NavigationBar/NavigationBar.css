@@ -1,0 +1,43 @@
+.navigation-bar {
+  padding: 1% 2%;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.navigation-bar.colourChange {
+  background-color: #f8f9fa;
+  box-shadow: 0px 15px 10px -15px rgb(134, 134, 134);
+}
+
+.dropdown-nav {
+  justify-content: flex-end;
+}
+
+.logo {
+  max-height: 8rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.my-link {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.my-link:hover {
+  text-decoration: underline;
+  color: var(--red) !important;
+}
+
+.my-link:focus {
+  text-decoration: underline;
+  color: var(--red) !important;
+}

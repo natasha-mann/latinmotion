@@ -4,4 +4,26 @@
   font-family: "Roboto Mono", monospace;
   color: white;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #c10000;
+  --teal: #00989d;
+  --pink: #ff65c3;
+  --dark-red: #7c1a0f;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+nav {
+  margin: 0;
+  padding: 0;
 }

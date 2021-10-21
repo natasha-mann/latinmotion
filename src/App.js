@@ -5,6 +5,7 @@ import HeroImage from "./components/HeroImage";
 import About from "./sections/About";
 import Classes from "./sections/Classes";
 import Events from "./sections/Events";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Classes />
       {/* <Events /> */}
+      <Footer />
     </div>
   );
 };

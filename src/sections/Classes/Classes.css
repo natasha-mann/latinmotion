@@ -1,3 +1,9 @@
+.classes-container {
+  margin: 0rem auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .venue-cards-container {
   margin: 3rem;
   margin-top: 4rem;
@@ -20,8 +26,7 @@
 }
 
 .venue-card {
-  min-width: 26vw;
-  max-width: 28vw;
+  width: 25vw;
   height: 15rem;
   padding: 2rem;
   background-color: var(--teal);
@@ -110,5 +115,93 @@
 @media screen and (min-width: 1700px) {
   .class-cards-container {
     margin: 3rem 15rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .venue-card {
+    width: 25vw;
+    margin: 0 1rem;
+    padding: 1.2rem;
+  }
+
+  .venue-name {
+    font-size: 1.3rem;
+  }
+
+  .view-btn {
+    width: 70%;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .venue-cards-container {
+    margin: 1rem;
+    margin-top: 4rem;
+  }
+
+  .class-cards-container {
+    margin: 1.5rem;
+  }
+
+  .venue-card {
+    width: 27vw;
+    margin: 0 0.5rem;
+  }
+
+  .view-btn {
+    width: 90%;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timetable {
+    margin-top: 2rem;
+  }
+
+  .timetable > .venue-card-small {
+    min-width: 80vw;
+    max-width: 80vw;
+    background-color: var(--red);
+  }
+
+  .venue-card-small {
+    min-width: 28vw;
+    max-width: 28vw;
+    height: 4rem;
+    padding: 0rem;
+    margin: 0 0.3rem 1rem 0.3rem;
+  }
+
+  .venue-name-small {
+    font-size: 1rem;
+  }
+
+  .venue-cards-container {
+    margin: 1rem;
+  }
+
+  .venue-card {
+    width: 90vw;
+    height: 5rem;
+    margin: 0.5rem 0;
+  }
+
+  .view-btn {
+    width: 50%;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .venue-card-small {
+    min-width: 29vw;
+    max-width: 29vw;
+  }
+
+  .venue-name-small {
+    font-size: 0.8rem;
   }
 }

@@ -106,6 +106,7 @@ const Classes = () => {
   ];
 
   const renderClasses = (event) => {
+    console.log("click");
     if (displayVenues === "displayed") {
       setDisplayVenues("hidden");
     }
@@ -135,19 +136,19 @@ const Classes = () => {
         </div>
         <div className={`${displayVenues} venue-cards-container`}>
           <div className="venue-card">
-            <div className="venue-name">BEARWOOD CLASSES</div>
+            <div className="venue-name text-center">BEARWOOD CLASSES</div>
             <button className="view-btn" id="bearwood" onClick={renderClasses}>
               VIEW MORE
             </button>
           </div>
           <div className="venue-card">
-            <div className="venue-name">SOLIHULL WEDNESDAYS</div>
+            <div className="venue-name text-center">SOLIHULL WEDNESDAYS</div>
             <button className="view-btn" id="solihull" onClick={renderClasses}>
               VIEW MORE
             </button>
           </div>
           <div className="venue-card">
-            <div className="venue-name">VIRTUAL CLASSES</div>
+            <div className="venue-name text-center">VIRTUAL CLASSES</div>
             <button className="view-btn" id="virtual" onClick={renderClasses}>
               VIEW MORE
             </button>

@@ -1,6 +1,13 @@
-.class-cards-container {
+.venue-cards-container {
   margin: 3rem;
   margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.class-cards-container {
+  margin: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -13,11 +20,27 @@
   padding: 2rem;
   background-color: var(--teal);
   margin: 0 2rem;
-  border-radius: 10%;
+  border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.venue-card-small {
+  border: none;
+  min-width: 22vw;
+  max-width: 25vw;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: var(--teal);
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -27,9 +50,21 @@
   color: white;
 }
 
+.venue-name-small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
 .venue-card:hover {
   transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.venue-card-small:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .view-btn {
@@ -45,4 +80,17 @@
   background-color: white;
   color: var(--teal);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.venue-buttons-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.displayed {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,4 +1,6 @@
-.card-container {
+.class-card {
+  width: 20rem;
+  height: 26rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -6,94 +8,34 @@
   position: relative;
   text-decoration: none;
   color: black;
+  border-radius: 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.card-container:hover,
-.card-container:active {
-  text-decoration: none;
-  color: black;
-}
-
-.card-container-small,
-.card-container-carousel {
-  width: 250px;
-  height: 290px;
-  padding: 0 1rem;
-}
-
-.card-container-large {
-  width: 430px;
-  height: 400px;
-}
-
-.card-container-large:hover,
-.card-container-small:hover {
-  transform: scale(1.01);
-}
-
-.card-body {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.card-image {
-  background-position: "center";
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.card-image-small,
-.card-image-carousel {
-  height: 12rem;
-}
-
-.card-image-large {
+.class-image {
   height: 20rem;
-}
-.card-image:hover {
-  cursor: pointer;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-}
-
-.card-link:hover {
-  color: RED;
-}
-
-.card-title-small,
-.card-title-carousel {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.card-title-large {
-  font-weight: bold;
-  font-size: 2rem;
+  border-radius: 10%;
 }
 
 .card-body {
-  height: 3.5rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.image-overlay {
-  position: absolute;
-  width: 80%;
-  left: 50%;
-  bottom: 0px;
-  transform: translate(-50%, 0);
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.774);
-  padding: 0.8rem 2rem;
+.class-book-btn {
+  padding: 1rem;
+  background-color: var(--teal);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
 }
 
-.displayed {
-  display: block;
-}
-
-.hidden {
-  display: none;
+.class-book-btn:hover {
+  background-color: var(--teal);
+  color: white;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); */
+  transform: scale(1.05);
 }

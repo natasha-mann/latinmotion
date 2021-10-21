@@ -1,3 +1,5 @@
+import { FaFacebook } from "react-icons/fa";
+
 import "./ClassCard.css";
 import "../../App.css";
 
@@ -12,6 +14,11 @@ const ClassCard = (props) => {
         >
           BOOK NOW
         </a>
+        {props.facebook && (
+          <a className="logo-container" href={props.facebook}>
+            <FaFacebook size="50" color="#1870E5" className="fbook-logo" />
+          </a>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 
 import ClassCard from "../../components/ClassCard";
 import FlexContainer from "../../components/FlexContainer";
@@ -9,22 +10,28 @@ import jayneSaturday from "../../images/classImages/jayne-saturday.jpeg";
 import privateClass from "../../images/classImages/private-class.jpeg";
 import saturdayOpen from "../../images/classImages/saturday-open.jpeg";
 import zoomSaturday from "../../images/classImages/zoom-saturday.jpeg";
+import tuesdaySaturday from "../../images/classImages/tuesday-saturday.jpeg";
+import wednesdaySolihull from "../../images/classImages/wednesday-solihull.jpeg";
+import timetable from "../../images/class-timetable.jpeg";
 
 const Classes = () => {
   const [displayVenues, setDisplayVenues] = useState("displayed");
   const [displayClasses, setDisplayClasses] = useState("hidden");
   const [classes, setClasses] = useState([]);
+  const [show, setShow] = useState(false);
 
   const classData = [
     {
       url: saturdayOpen,
       alt: "Salsa and Bachata footwork class",
       location: "bearwood",
+      facebook: "https://www.facebook.com/events/951593018772365/",
     },
     {
       url: jayneSaturday,
       alt: "Jayne Turpin Ladies Styling Class",
       location: "bearwood",
+      facebook: "https://www.facebook.com/events/951593018772365/",
     },
     {
       url: privateClass,
@@ -32,14 +39,69 @@ const Classes = () => {
       location: "bearwood",
     },
     {
-      url: privateClass,
-      alt: "Mauricio Reyes Private Classes",
+      url: tuesdaySaturday,
+      alt: "SALSA & BACHATA 50:50 (Beginners & Improvers)",
+      location: "bearwood",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: tuesdaySaturday,
+      alt: "BACHATA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "bearwood",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: tuesdaySaturday,
+      alt: "SALSA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "bearwood",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: wednesdaySolihull,
+      alt: "SALSA & BACHATA 50:50 (Beginners & Improvers)",
       location: "solihull",
+      facebook: "https://www.facebook.com/events/287294166553552",
+    },
+    {
+      url: wednesdaySolihull,
+      alt: "BACHATA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "solihull",
+      facebook: "https://www.facebook.com/events/287294166553552",
+    },
+    {
+      url: wednesdaySolihull,
+      alt: "SALSA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "solihull",
+      facebook: "https://www.facebook.com/events/287294166553552",
     },
     {
       url: zoomSaturday,
       alt: "Mauricio Reyes virtual party class",
       location: "virtual",
+    },
+    {
+      url: jayneSaturday,
+      alt: "Jayne Turpin Ladies Styling Class",
+      location: "virtual",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: tuesdaySaturday,
+      alt: "SALSA & BACHATA 50:50 (Beginners & Improvers)",
+      location: "virtual",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: tuesdaySaturday,
+      alt: "BACHATA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "virtual",
+      facebook: "https://www.facebook.com/events/951593018772365/",
+    },
+    {
+      url: tuesdaySaturday,
+      alt: "SALSA PARTNER-WORK CLASSES (up to 3 levels) Beginners, Improvers + Int/Adv",
+      location: "virtual",
+      facebook: "https://www.facebook.com/events/951593018772365/",
     },
   ];
 
@@ -59,10 +121,18 @@ const Classes = () => {
     }
   };
 
+  const handleCloseModal = () => setShow(false);
+  const handleShowModal = () => setShow(true);
+
   return (
     <FlexContainer padding="true" id="classes">
       <div className="classes-container">
         <Title text="CLASSES" />
+        <div className="timetable">
+          <button onClick={handleShowModal} className="venue-card-small">
+            <div className="venue-name-small">VIEW TIMETABLE</div>
+          </button>
+        </div>
         <div className={`${displayVenues} venue-cards-container`}>
           <div className="venue-card">
             <div className="venue-name">BEARWOOD CLASSES</div>
@@ -110,11 +180,29 @@ const Classes = () => {
               </button>
             </div>
             {classes.map((each, index) => {
-              return <ClassCard url={each.url} alt={each.alt} key={index} />;
+              return (
+                <ClassCard
+                  url={each.url}
+                  alt={each.alt}
+                  key={index}
+                  facebook={each.facebook}
+                />
+              );
             })}
           </div>
         )}
       </div>
+
+      <Modal show={show} onHide={handleCloseModal} size="xl">
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <img
+            src={timetable}
+            alt="Full Class Timetable Latin Motion"
+            className="modal-image"
+          />
+        </Modal.Body>
+      </Modal>
     </FlexContainer>
   );
 };

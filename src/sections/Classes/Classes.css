@@ -1,6 +1,6 @@
 .venue-cards-container {
   margin: 3rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -11,6 +11,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.timetable {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 .venue-card {
@@ -84,6 +90,8 @@
 
 .venue-buttons-container {
   display: flex;
+  justify-content: center;
+  width: 100%;
   padding: 1rem 0;
 }
 
@@ -93,4 +101,14 @@
 
 .hidden {
   display: none;
+}
+
+.modal-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 1700px) {
+  .class-cards-container {
+    margin: 3rem 15rem;
+  }
 }

@@ -5,10 +5,10 @@ import FlexContainer from "../../components/FlexContainer";
 import Title from "../../components/Title";
 import "./Classes.css";
 
-import jayneSaturday from "../../images/jayne-saturday.jpeg";
-import privateClass from "../../images/private-class.jpeg";
-import saturdayOpen from "../../images/saturday-open.jpeg";
-import zoomSaturday from "../../images/zoom-saturday.jpeg";
+import jayneSaturday from "../../images/classImages/jayne-saturday.jpeg";
+import privateClass from "../../images/classImages/private-class.jpeg";
+import saturdayOpen from "../../images/classImages/saturday-open.jpeg";
+import zoomSaturday from "../../images/classImages/zoom-saturday.jpeg";
 
 const Classes = () => {
   const [displayVenues, setDisplayVenues] = useState("displayed");

@@ -3,11 +3,15 @@ import Title from "../../components/Title";
 import FlexContainer from "../../components/FlexContainer";
 import Carousel from "../../components/CardsCarousel";
 
-import mauricio from "../../images/mauricio-party.jpeg";
-import dj from "../../images/mauricio-dj.jpeg";
-import teaching from "../../images/mauricio-teaching.jpeg";
-import party from "../../images/party-img.jpeg";
-import landrover from "../../images/landrover.jpeg";
+import mauricio from "../../images/carouselImages/mauricio-party.jpeg";
+import dj from "../../images/carouselImages/mauricio-dj.jpeg";
+import teaching from "../../images/carouselImages/mauricio-teaching.jpeg";
+import party from "../../images/carouselImages/party-img.jpeg";
+import landrover from "../../images/carouselImages/landrover.jpeg";
+import djs from "../../images/carouselImages/djs-landrover.jpeg";
+import nyeLineup from "../../images/carouselImages/nye-lineup.jpeg";
+import nyeParty from "../../images/carouselImages/nye-party.jpeg";
+import nyePromo from "../../images/carouselImages/nye-promo.jpeg";
 
 const About = () => {
   const carouselImages = [
@@ -20,11 +24,18 @@ const About = () => {
     },
     { src: dj, alt: "Mauricio Reyes", className: "about-img" },
     { src: party, alt: "Latin Motion NYE party", className: "about-img" },
-    { src: party, alt: "Latin Motion NYE party", className: "about-img" },
-    { src: party, alt: "Latin Motion NYE party", className: "about-img" },
-    { src: party, alt: "Latin Motion NYE party", className: "about-img" },
-    { src: party, alt: "Latin Motion NYE party", className: "about-img" },
-    { src: party, alt: "Latin Motion NYE party", className: "about-img" },
+    { src: djs, alt: "Latin Motion DJs", className: "about-img" },
+    {
+      src: nyeLineup,
+      alt: "Latin Motion NYE party lineup",
+      className: "about-img",
+    },
+    { src: nyeParty, alt: "Latin Motion NYE party", className: "about-img" },
+    {
+      src: nyePromo,
+      alt: "Latin Motion NYE party promo",
+      className: "about-img",
+    },
   ];
 
   return (

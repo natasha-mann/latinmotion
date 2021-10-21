@@ -17,6 +17,11 @@ const Classes = () => {
 
   const classData = [
     {
+      url: saturdayOpen,
+      alt: "Salsa and Bachata footwork class",
+      location: "bearwood",
+    },
+    {
       url: jayneSaturday,
       alt: "Jayne Turpin Ladies Styling Class",
       location: "bearwood",
@@ -30,11 +35,6 @@ const Classes = () => {
       url: privateClass,
       alt: "Mauricio Reyes Private Classes",
       location: "solihull",
-    },
-    {
-      url: saturdayOpen,
-      alt: "Salsa and Bachata footwork class",
-      location: "bearwood",
     },
     {
       url: zoomSaturday,

@@ -13,7 +13,7 @@ const App = () => {
       <HeroImage />
       <About />
       <Classes />
-      <Events />
+      {/* <Events /> */}
     </div>
   );
 };

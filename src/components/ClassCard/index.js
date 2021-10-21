@@ -11,11 +11,18 @@ const ClassCard = (props) => {
         <a
           href="https://latinmotion.as.me/schedule.php"
           className="class-book-btn"
+          target="_blank"
+          rel="noreferrer"
         >
           BOOK NOW
         </a>
         {props.facebook && (
-          <a className="logo-container" href={props.facebook}>
+          <a
+            className="logo-container"
+            href={props.facebook}
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaFacebook size="50" color="#1870E5" className="fbook-logo" />
           </a>
         )}

@@ -41,4 +41,15 @@
     margin-bottom: 2rem;
     text-align: center;
   }
+
+  .about-img {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .about-img {
+    width: 30rem;
+  }
 }

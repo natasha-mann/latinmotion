@@ -1,0 +1,12 @@
+.footer div {
+  opacity: 0.3;
+}
+
+.portfolio-link {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.portfolio-link:hover {
+  cursor: pointer;
+}

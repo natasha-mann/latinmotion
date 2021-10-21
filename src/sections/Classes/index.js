@@ -6,6 +6,9 @@ import Title from "../../components/Title";
 import "./Classes.css";
 
 import jayneSaturday from "../../images/jayne-saturday.jpeg";
+import privateClass from "../../images/private-class.jpeg";
+import saturdayOpen from "../../images/saturday-open.jpeg";
+import zoomSaturday from "../../images/zoom-saturday.jpeg";
 
 const Classes = () => {
   const [displayVenues, setDisplayVenues] = useState("displayed");
@@ -19,33 +22,41 @@ const Classes = () => {
       location: "bearwood",
     },
     {
-      url: jayneSaturday,
-      alt: "Jayne Turpin Ladies Styling Class",
+      url: privateClass,
+      alt: "Mauricio Reyes Private Classes",
       location: "bearwood",
     },
     {
-      url: jayneSaturday,
-      alt: "Jayne Turpin Ladies Styling Class",
-      location: "bearwood",
-    },
-
-    {
-      url: jayneSaturday,
-      alt: "Jayne Turpin Ladies Styling Class",
+      url: privateClass,
+      alt: "Mauricio Reyes Private Classes",
       location: "solihull",
+    },
+    {
+      url: saturdayOpen,
+      alt: "Salsa and Bachata footwork class",
+      location: "bearwood",
+    },
+    {
+      url: zoomSaturday,
+      alt: "Mauricio Reyes virtual party class",
+      location: "virtual",
     },
   ];
 
   const renderClasses = (event) => {
-    setDisplayVenues("hidden");
+    if (displayVenues === "displayed") {
+      setDisplayVenues("hidden");
+    }
 
     const classArray = classData.filter(
-      (each) => each.location === event.target.id
+      (each) => each.location === event.currentTarget.id
     );
 
     setClasses(classArray);
 
-    setDisplayClasses("displayed");
+    if (displayClasses === "hidden") {
+      setDisplayClasses("displayed");
+    }
   };
 
   return (

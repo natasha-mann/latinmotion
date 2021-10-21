@@ -7,9 +7,9 @@ const Footer = () => {
         © Latin Motion. Designed and Built by{" "}
         <a
           className="portfolio-link"
-          href="natasha-mann.github.io/portfolio-react"
+          href="https://natasha-mann.github.io/portfolio-react/"
           target="_blank"
-          rel="no referrer"
+          rel="noreferrer"
         >
           Natasha Mann
         </a>

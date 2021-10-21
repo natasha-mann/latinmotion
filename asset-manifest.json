@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/latinmotion/static/css/main.fe09f4a5.chunk.css",
-    "main.js": "/latinmotion/static/js/main.cd0c1f5d.chunk.js",
-    "main.js.map": "/latinmotion/static/js/main.cd0c1f5d.chunk.js.map",
+    "main.js": "/latinmotion/static/js/main.e27a666b.chunk.js",
+    "main.js.map": "/latinmotion/static/js/main.e27a666b.chunk.js.map",
     "runtime-main.js": "/latinmotion/static/js/runtime-main.85bde9a3.js",
     "runtime-main.js.map": "/latinmotion/static/js/runtime-main.85bde9a3.js.map",
     "static/css/2.6c9fefaa.chunk.css": "/latinmotion/static/css/2.6c9fefaa.chunk.css",
@@ -38,6 +38,6 @@
     "static/css/2.6c9fefaa.chunk.css",
     "static/js/2.f21b5cfd.chunk.js",
     "static/css/main.fe09f4a5.chunk.css",
-    "static/js/main.cd0c1f5d.chunk.js"
+    "static/js/main.e27a666b.chunk.js"
   ]
 }

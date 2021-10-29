@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, animateScroll as scroll } from "react-scroll";
-
 import "bootstrap/dist/js/bootstrap";
 
 import logo from "../../images/latinmotion-logo.png";

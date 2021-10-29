@@ -1,20 +1,18 @@
+import FilterStrip from "../../components/FilterStrip";
 import FlexContainer from "../../components/FlexContainer";
 import Title from "../../components/Title";
-import "./Events.css";
+import "./Parties.css";
 
-const Events = () => {
+const Parties = () => {
   return (
     <FlexContainer padding="true" id="events">
       <div className="events-container">
         <Title text="EVENTS" />
-        <div className="event-cards-container">
-          <div className="venue-card"></div>
-          <div className="venue-card"></div>
-          <div className="venue-card"></div>
-        </div>
+        <FilterStrip />
+        <div className="event-cards-container"></div>
       </div>
     </FlexContainer>
   );
 };
 
-export default Events;
+export default Parties;

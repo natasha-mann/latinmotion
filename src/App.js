@@ -4,7 +4,7 @@ import NavigationBar from "./components/NavigationBar";
 import HeroImage from "./components/HeroImage";
 import About from "./sections/About";
 import Classes from "./sections/Classes";
-import Events from "./sections/Events";
+import Parties from "./sections/Parties";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
       <HeroImage />
       <About />
       <Classes />
-      {/* <Events /> */}
+      <Parties />
       <Footer />
     </div>
   );

@@ -26,9 +26,7 @@ const FilterStrip = (props) => {
                 value=""
                 id="salsa-party"
               />
-              <label className="form-check-label" for="salsa-party">
-                Salsa
-              </label>
+              <label className="form-check-label">Salsa</label>
             </div>
             <div className="form-check">
               <input
@@ -37,9 +35,7 @@ const FilterStrip = (props) => {
                 value=""
                 id="bachata-party"
               />
-              <label className="form-check-label" for="bachata-party">
-                Bachata
-              </label>
+              <label className="form-check-label">Bachata</label>
             </div>
             <div className="form-check">
               <input
@@ -48,9 +44,7 @@ const FilterStrip = (props) => {
                 value=""
                 id="kizomba-party"
               />
-              <label className="form-check-label" for="kizomba-party">
-                Kizomba
-              </label>
+              <label className="form-check-label">Kizomba</label>
             </div>
             <h6 className="my-2">Venue</h6>
             <div className="form-check">
@@ -60,9 +54,7 @@ const FilterStrip = (props) => {
                 value=""
                 id="bearwood-venue"
               />
-              <label className="form-check-label" for="bearwood-venue">
-                Bearwood
-              </label>
+              <label className="form-check-label">Bearwood</label>
             </div>
             <div className="submit-btn-div">
               <button
